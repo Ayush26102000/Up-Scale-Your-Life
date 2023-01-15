@@ -1,6 +1,9 @@
-.bg{
+.bg {
     display: flex;
     flex-direction: column;
+    padding-left: 22rem;
+
+
 }
 
 
@@ -47,6 +50,7 @@ button {
     transition: all .5s ease;
     margin: .5rem 0;
     color: rgb(255, 124, 0);
+
 }
 
 button:hover {
@@ -71,7 +75,7 @@ select {
     margin: 1rem 0;
     outline: 0;
     transition: 0.5s ease-in-out;
-    font-weight: 900;
+    font-weight: 600;
     font-size: .8vw;
     color: rgb(255, 124, 0);
     background-color: rgb(19, 30, 37);
@@ -79,6 +83,7 @@ select {
     border: none;
     outline: none;
     border-left: 1px solid rgb(255, 124, 0);
+
 }
 
 select:focus {
@@ -96,24 +101,24 @@ option {
     color: rgb(255, 124, 0);
 }
 
-h1{
-    color:rgb(255, 124, 0) ;
+h1 {
+    color: rgb(255, 124, 0);
 }
 
-.bucketcardinfo{
+.bucketcardinfo {
     background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%,
-     rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%,
-     rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+            rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%,
+            rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
     border: 2px solid white;
     border-radius: 1rem;
     color: rgb(255, 255, 255);
     margin: 2rem 0;
 }
 
-.bucketsection{
+.bucketsection {
     border-bottom: 2px solid rgb(255, 255, 255);
-    padding:1rem 1rem 1rem 2rem ;
-    
+    padding: 1rem 1rem 1rem 2rem;
+
 }
 
 
@@ -131,6 +136,7 @@ h1{
     transition: all .5s ease;
     margin: .5rem .5rem;
     color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .buttonw:hover {
@@ -149,6 +155,24 @@ h1{
     transition: 100ms;
 }
 
-h3{
+h3 {
     margin: 1rem;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .bg {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    ::placeholder {
+        font-size: 1rem;
+
+    }
+
+    select {
+        font-size: .8rem;
+    }
 }

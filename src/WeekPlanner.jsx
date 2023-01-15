@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BsCalendarCheck } from 'react-icons/bs';
 
 import './WeekPlanner.css';
 
@@ -126,25 +127,26 @@ const WeekPlanner = () => {
     };
     return (
         <div className='bg'>
-            <h1>React JS WeekPlanner Application</h1>
+            <h1> <BsCalendarCheck /> Week Planner</h1>
+            <h3 style={{ margin: '0', padding: '1rem 0 .5rem 0' }}>Up scale your life by planning a routine</h3>
             {/* <h3>Create Bucket</h3> */}
-            <input type="text" placeholder="Enter your category" onChange={handleBucketNameInput} value={bucketName} />
-            <button onClick={handleSaveBucket}>{editing ? 'Update' : 'Add'} Category </button>
+            <input type="text" placeholder="Name your weekly mission..." onChange={handleBucketNameInput} value={bucketName} />
+            <button onClick={handleSaveBucket}>{editing ? 'Update' : 'Add'} Weekly mission </button>
             {/* <h3>Add URLs to bucket</h3> */}
             <select value={bucket} onChange={handleBucketSelect}>
-                <option value="">Please select a Category</option>
+                <option value="">Select a Mission</option>
                 {savedBuckets.map((item, index) => (
                     <option key={index} value={item.name}>{item.name}</option>
                 ))}
             </select>
-            <input type="text" placeholder="Enter your WeekPlanner Name" onChange={handleNameInput} value={name} />
-            <input type="text" pattern="https://.*" size="30" required placeholder="Enter your URL" onChange={handleUrlInput} value={url} />
-            <button onClick={handleSaveUrl}>{editing ? 'Update' : 'Save'} WeekPlanner</button>
+            <input type="text" placeholder="Enter the day of the week" onChange={handleNameInput} value={name} />
+            <input type="text" placeholder="Enter your Daily achievable Goals... " onChange={handleUrlInput} value={url} />
+            <button onClick={handleSaveUrl}>{editing ? 'Update' : 'Save'} Daily Goal</button>
             {savedBuckets.map((item, index) => (
                 <div key={index} className="bucketcardinfo">
                     <div className='bucketsection'>
-                        <h3>Category Name</h3>
-                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:'center' }}>
+                        <h3>Weekly Mission</h3>
+                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                             <h4 >{item.name}</h4>
                             <div>  <button onClick={() => handleDeleteBucket(index)} className='buttonw'>Delete</button>
                                 <button onClick={() => handleEditBucket(index)} className='buttonw'>Edit</button></div>
@@ -154,10 +156,10 @@ const WeekPlanner = () => {
                     {savedUrls
                         .filter(url => url.bucket === item.name)
                         .map((url, urlIndex) => (
-                            <div key={urlIndex} className="card">
+                            <div key={urlIndex} >
                                 <div className='bucketsection' key={urlIndex} draggable onDragStart={(e) => handleDragStart(e, urlIndex)} onDrop={(e) => handleDrop(e, item.name)} onDragOver={handleDragOver}>
-                                    <h3>Card Name & URL</h3>
-                                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:'center' }}>
+                                    <h3>Your daily goal..</h3>
+                                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                                         <h4 style={{ padding: '1rem' }} >{url.name}</h4>
                                         <div>
                                             <button onClick={() => handleDeleteUrl(urlIndex)} className='buttonw'>Delete</button>

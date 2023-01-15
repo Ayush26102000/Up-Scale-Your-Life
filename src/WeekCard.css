@@ -4,9 +4,29 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+    flex: 1;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 ul{
     text-align: left;
+}
+
+.card{
+display: flex;
+width: 70%;
+margin: 5rem 0 0 8rem;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media screen and (max-width: 450px){
+    .card{
+        margin: 3rem 0rem 0 3rem;
+        width: 60%;
+    }
+   
 }

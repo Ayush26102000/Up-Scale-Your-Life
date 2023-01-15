@@ -24,10 +24,10 @@ const WeekCard1 = () => {
 
   return (
     <div className="week-card">
-      <h2>Current Week</h2>
-      <div> <button className='buttonw' onClick={handlePreviousClick}>Previous</button>
-      <button className='buttonw' onClick={handleNextClick}>Next</button></div>
-     
+      <h2 style={{ paddingBottom: '1rem', color: 'rgb(255, 124, 0)' }}>Current Week</h2>
+      <div style={{ paddingBottom: '1rem' }}> <button className='buttonw' onClick={handlePreviousClick}>Previous</button>
+        <button className='buttonw' onClick={handleNextClick}>Next</button></div>
+
       <ul>
         {currentWeek.map((day, index) => (
           <li key={index}>{day.format('dddd, MMMM Do')}</li>
@@ -65,8 +65,9 @@ function QuoteCard() {
 
   return (
     <div className="card">
+      <h2 style={{ margin: '0', paddingBottom: '1rem', color: 'rgb(255, 124, 0)' }}>Read this to feel motivated for the week</h2>
       <p className="quote">{currentQuote.quote}</p>
-      <p className="author">- {currentQuote.author}</p>
+      <p className="author" style={{ color: 'rgb(255, 124, 0)', paddingTop: '.5rem' }}>- {currentQuote.author}</p>
     </div>
   );
 }
@@ -74,7 +75,7 @@ function QuoteCard() {
 
 function WeekCard() {
   return (
-    <div style={{display:'flex',flexDirection:'column'}}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <WeekCard1 />
       <QuoteCard />
     </div>
