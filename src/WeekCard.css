@@ -1,0 +1,12 @@
+.week-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+ul{
+    text-align: left;
+}

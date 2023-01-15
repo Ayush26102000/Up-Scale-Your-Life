@@ -1,0 +1,154 @@
+.bg{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input {
+    padding: 1rem 1rem 1rem .5rem;
+    margin: 1rem 0;
+    outline: 0;
+    transition: 0.5s ease-in-out;
+    font-weight: 900;
+    font-size: .8vw;
+    color: rgb(255, 124, 0);
+    background-color: rgb(19, 30, 37);
+    box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.5), 0 0 0 .15vw transparent;
+    border: none;
+    outline: none;
+    border-left: 1px solid rgb(255, 124, 0);
+
+}
+
+input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+
+input:focus {
+    box-shadow: 0 0 0 .15vw rgb(255, 163, 77);
+    border-radius: 0.4vw;
+}
+
+
+
+button {
+    padding: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 124, 0);
+    background-color: rgb(19, 30, 37);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    margin: .5rem 0;
+    color: rgb(255, 124, 0);
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(255, 124, 0);
+    color: rgb(19, 30, 37);
+    box-shadow: rgb(255, 124, 0) 1px 2px 8px 0px;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: rgb(52, 52, 52);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(80, 80, 80) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+
+select {
+    padding: 1rem 1rem 1rem .5rem;
+    margin: 1rem 0;
+    outline: 0;
+    transition: 0.5s ease-in-out;
+    font-weight: 900;
+    font-size: .8vw;
+    color: rgb(255, 124, 0);
+    background-color: rgb(19, 30, 37);
+    box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.5), 0 0 0 .15vw transparent;
+    border: none;
+    outline: none;
+    border-left: 1px solid rgb(255, 124, 0);
+}
+
+select:focus {
+    box-shadow: 0 0 0 .15vw rgb(255, 124, 0);
+    border-radius: 0.4vw;
+}
+
+option {
+    padding: 1rem;
+}
+
+::placeholder {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(255, 124, 0);
+}
+
+h1{
+    color:rgb(255, 124, 0) ;
+}
+
+.bucketcardinfo{
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%,
+     rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%,
+     rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    border: 2px solid white;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    margin: 2rem 0;
+}
+
+.bucketsection{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding:1rem 1rem 1rem 2rem ;
+    
+}
+
+
+.buttonw {
+    padding: .7rem 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(19, 30, 37);
+    box-shadow: rgba(255, 255, 255, 0.05) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    margin: .5rem .5rem;
+    color: rgb(255, 255, 255);
+}
+
+.buttonw:hover {
+    letter-spacing: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 30, 37);
+    box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+}
+
+.buttonw:active {
+    letter-spacing: 3px;
+    background-color: rgb(52, 52, 52);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+h3{
+    margin: 1rem;
+}
