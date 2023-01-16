@@ -140,8 +140,8 @@ const WeekPlanner = () => {
                     <option key={index} value={item.name}>{item.name}</option>
                 ))}
             </select>
-            <input type="text" placeholder="Enter the day of the week" onChange={handleNameInput} value={name} />
-            <input type="text" placeholder="Enter your Daily achievable Goals... " onChange={handleUrlInput} value={url} />
+            <input type="text" placeholder="Enter your Daily achievable Goals... " onChange={handleNameInput} value={name} />
+            <input type="text" placeholder="Enter the day of the week " onChange={handleUrlInput} value={url} />
             <button onClick={handleSaveUrl}>{editing ? 'Update' : 'Save'} Daily Goal</button>
             {savedBuckets.map((item, index) => (
                 <div key={index} className="bucketcardinfo">
@@ -162,6 +162,7 @@ const WeekPlanner = () => {
                                     <h3>Your daily goal..</h3>
                                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                                         <h4 style={{ padding: '1rem' }} >{url.name}</h4>
+                                        <h4 style={{ padding: '1rem' }} >{url.url}</h4>
                                         <div>
                                     
                                            <AiOutlineEdit style={{fontSize:'1.8rem',padding:'.2rem'}} onClick={() => handleEditUrl(urlIndex)}/> 
