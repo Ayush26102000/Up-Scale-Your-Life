@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BsCalendarCheck } from 'react-icons/bs';
+import {AiOutlineEdit, AiOutlineDelete} from 'react-icons/ai'
 
 import './WeekPlanner.css';
 
@@ -148,8 +149,8 @@ const WeekPlanner = () => {
                         <h3>Weekly Mission</h3>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                             <h4 >{item.name}</h4>
-                            <div>  <button onClick={() => handleDeleteBucket(index)} className='buttonw'>Delete</button>
-                                <button onClick={() => handleEditBucket(index)} className='buttonw'>Edit</button></div>
+                            <div>  <AiOutlineDelete  style={{fontSize:'1.8rem',padding:'.2rem'}} onClick={() => handleDeleteBucket(index)} />
+                               <AiOutlineEdit style={{fontSize:'1.8rem',padding:'.2rem'}} onClick={() => handleEditBucket(index)}/> </div>
                         </div>
                     </div>
 
@@ -162,8 +163,9 @@ const WeekPlanner = () => {
                                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                                         <h4 style={{ padding: '1rem' }} >{url.name}</h4>
                                         <div>
-                                            <button onClick={() => handleDeleteUrl(urlIndex)} className='buttonw'>Delete</button>
-                                            <button onClick={() => handleEditUrl(urlIndex)} className='buttonw'>Edit</button>
+                                    
+                                           <AiOutlineEdit style={{fontSize:'1.8rem',padding:'.2rem'}} onClick={() => handleEditUrl(urlIndex)}/> 
+                                           <AiOutlineDelete style={{fontSize:'1.8rem',padding:'.2rem'}} onClick={() => handleDeleteUrl(urlIndex)}/>
                                         </div>
                                     </div>
                                 </div>

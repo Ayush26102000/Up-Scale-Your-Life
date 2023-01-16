@@ -28,6 +28,9 @@ h1 {
     flex-direction: column;
     padding: 2rem;
     width: 100%;
+    background: radial-gradient(circle at -8.9% 30%, rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 12%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 10%,
+    rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
   }
 
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 22rem;
-
+    width: 80%;
 
 }
 
@@ -118,6 +118,7 @@ h1 {
 .bucketsection {
     border-bottom: 2px solid rgb(255, 255, 255);
     padding: 1rem 1rem 1rem 2rem;
+    cursor:grab;
 
 }
 
@@ -165,6 +166,10 @@ h3 {
     .bg {
         padding: 1rem;
         margin-bottom: 2rem;
+        width: 100%;
+    }
+    input{
+        font-size: 1rem;
     }
 
     ::placeholder {
